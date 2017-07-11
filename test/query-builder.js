@@ -488,7 +488,7 @@ test('queryBuilder | hasParent (valid v2 syntax)', (t) => {
   })
 })
 
-test('queryBuilder | has_parent filter v1 syntax', (t) => {
+test.skip('queryBuilder | has_parent filter v1 syntax', (t) => {
   t.plan(1)
 
   const result = queryBuilder().query('hasParent', 'parentTag', 'blog', (q) => {
